@@ -600,6 +600,11 @@ header {
     margin-bottom: 0.8rem;
 }
 
+.xp__card__company a {
+    border-bottom: 1px solid black;
+    font-size: 1.6rem;
+}
+
 .xp__card--left::before, .xp__card--right::before  {
     content: " ";
     height: 2px;
@@ -674,7 +679,7 @@ header {
 }
 
 .education-grid {
-    margin: 5% 5%;
+    margin: 0 5%;
     align-items: center;
 }
 
