@@ -36,7 +36,12 @@
     word-wrap: break-word;
 }
 
+html {
+    height: 100%;
+}
+
 body {
+    height: 100%;
     font-family: 'Maison';
     font-weight: normal;
     color: #fff;
@@ -133,6 +138,7 @@ section {
 
 .main-gradient {
     background: #495aff;
+    background-image: -webkit-gradient(to right, #0acffe 0%, #495aff 100%);
     background-image: linear-gradient(to right, #0acffe 0%, #495aff 100%);
     background: -moz-linear-gradient(left, #0acffe 0%, #495aff 100%);
     background: -webkit-linear-gradient(left, #0acffe 0%, #495aff 100%);
@@ -387,6 +393,13 @@ header {
 
     .hero__block {
         padding: 0 2rem;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .hero {
+        padding-top: 14px;
+        margin-top: 0;
     }
 }
 
