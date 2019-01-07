@@ -328,11 +328,8 @@ header {
 \*------------------------------------*/
 
 .hero {
-    height: 90vh;
-    margin-top: 60px;
     color: #fff;
     margin-bottom: 0;
-    padding-top: 0;
 }
 
 .hero__img {
@@ -353,6 +350,10 @@ header {
 .hero__text > h3 {
     padding-bottom: 8%;
     padding-top: 1%;
+}
+
+.hero__text > p {
+    margin-bottom: 2rem;
 }
 
 .hero__text a {
@@ -384,7 +385,7 @@ header {
 @media screen and (max-width: 746px) {
     .hero {
         flex-direction: column-reverse;
-        height: 100%;
+        padding-top: 50px;
     }
 
     .flex-half {
@@ -396,12 +397,6 @@ header {
     }
 }
 
-@media screen and (max-width: 420px) {
-    .hero {
-        padding-top: 14px;
-        margin-top: 0;
-    }
-}
 
 /*------------------------------------*\
   #PORTFOLIO
