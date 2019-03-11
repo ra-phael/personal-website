@@ -20,5 +20,10 @@ function toggleMenu() {
 function openProjectDetails() {
   let el = this;
   let slug = el.firstElementChild.firstElementChild.id;
-  window.location.href = '/projects/'+ slug;
+  let modal = document.getElementById(slug + "-modal");
+  modal.classList.toggle("hidden");
+}
+function closeProjectDetails() {
+  let el = this;
+  this.parentNode.classList.toggle("hidden");
 }

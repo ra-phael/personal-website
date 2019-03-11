@@ -142,7 +142,7 @@ a {
 }
 
 @media screen and (max-width: 746px) {
-    .flex-60, .flex-40 {
+    .flex-60, .flex-40, .flex-50 {
         width: 100%;
     }
 }
@@ -792,6 +792,8 @@ footer {
   #MODALS
 \*------------------------------------*/
 .project-modal {
+  display: flex;
+  opacity: 1;
   height: 80vh;
   width: 93vw;
   z-index: 400;
@@ -804,6 +806,7 @@ footer {
 }
 
 .project-modal__left {
+  height: 100%;
   padding: 12px;
 }
 
@@ -825,6 +828,23 @@ footer {
   width: 91%;
   height: 72%;
   overflow: auto;
+}
+
+@media screen and (max-width: 746px) {
+  .project-modal {
+    flex-direction: column;
+    height: 100vh;
+    width: 96vw;
+    top: 2%;
+    right: 2%;
+  }
+  .project-modal_description {
+    margin: 0;
+  }
+  .project-modal__left {
+    height: 50%;
+    margin-top: 30px;
+  }
 }
 
 /*------------------------------------*\
@@ -859,3 +879,7 @@ footer {
     100% { opacity: 1; }
 }
 
+.hidden {
+  opacity: 0;
+  display: none;
+}

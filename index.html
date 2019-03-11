@@ -232,8 +232,8 @@
       </div>
   </section>
   <footer class="flex-center">That's all, Folks!<br/>&copy; <script>document.write(new Date().getFullYear());</script>, Raphael Roullet.</footer>
-  <article class="project-modal flex-halves">
-    <a onclick="">
+  <article id="simma-modal" class="project-modal hidden">
+    <a onclick="closeProjectDetails.call(this)">
       <img src="./assets/close.svg" class="project-modal__close"/>
     </a>
     <div class="flex-50 project-modal__left">
@@ -246,7 +246,7 @@
           <br/>At this point I had a pretty good grasp of Python but zero knowledge of Javascript	!!
           <br/>Warrior mode: ON 💪
           <br/><br/>
-          <b>Timeline:</b><br/>
+          <strong>Timeline:</strong><br/>
           March 16 →  March 28 : API development, discovered + implemented MongoDB<br/>
           March 29 →  April 10 : Learned Javascript<br/>
           April 11 →  April 17 : Learned Angular, Typescript & Ionic<br/>
