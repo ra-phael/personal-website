@@ -851,12 +851,13 @@ footer {
 @media screen and (max-width: 746px) {
   .project-modal {
     flex-direction: column;
-    height: 91vh;
+    height: 84vh;
     width: 96vw;
     top: 2%;
     right: 2%;
   }
   .project-modal_description {
+    height: 50%;
     margin: 0;
   }
   .project-modal__left {
