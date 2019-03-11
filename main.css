@@ -50,6 +50,10 @@ html {
     height: 100%;
 }
 
+strong {
+  font-weight: bold;
+}
+
 body {
     height: 100%;
     font-family: 'Maison';
@@ -519,6 +523,12 @@ header {
     left: auto;
 }
 
+.tracksy {
+  background-image: url(../assets/portfolio/tracksy.jpg);
+  background-size: cover;
+  background-position-y: 9px;
+}
+
 .simma {
     background-image: url(../assets/portfolio/simma1.png);
     background-size: cover;
@@ -806,6 +816,9 @@ footer {
 }
 
 .project-modal__left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 100%;
   padding: 12px;
 }
@@ -828,6 +841,11 @@ footer {
   width: 91%;
   height: 72%;
   overflow: auto;
+}
+
+.project-modal__img {
+  max-width:100%;
+  height:auto
 }
 
 @media screen and (max-width: 746px) {

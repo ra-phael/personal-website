@@ -83,6 +83,14 @@
           <hr class="subline">
           <h3 class="text-center">DEV</h3>
           <div class="projects">
+              <a class="card project-card--right tracksy"
+                onclick="openProjectDetails.call(this)">
+                  <p class="project__title--right">
+                    <span class="project__title-span" id="tracksy">
+                      TRACKSY
+                    </span>
+                  </p>
+              </a>
               <a class="card project-card--left simma"
                 onclick="openProjectDetails.call(this)">
                   <p class="project__title--left">
@@ -243,7 +251,7 @@
       <p class="project-modal_text">
           Here’s a demo of the MVP of an app I created and called SIMMA (for SIMilarity MAtching).<br/>
           Beginning of 2018, I had already developed the matching algorithm as my capstone project for Udacity’s Machine Learning Nanodegree. I decided to serve it as an API with Python Flask and to create a mobile app with Ionic 2 to be cross-platform.
-          <br/>At this point I had a pretty good grasp of Python but zero knowledge of Javascript	!!
+          <br/>At this point I had a pretty good grasp of Python but <strong>zero knowledge of Javascript	!!</strong>
           <br/>Warrior mode: ON 💪
           <br/><br/>
           <strong>Timeline:</strong><br/>
@@ -265,7 +273,30 @@
             class="rounded-button rounded-button--outline" target="_blank"><span>SOURCE</span></a>
         </div> -->
       </div>
-      
+    </div>
+  </article>
+  <article id="tracksy-modal" class="project-modal hidden">
+    <a onclick="closeProjectDetails.call(this)">
+      <img src="./assets/close.svg" class="project-modal__close"/>
+    </a>
+    <div class="flex-50 project-modal__left">
+      <img style="width: 160px;" class="project-modal__img" src="./assets/portfolio/tracksy-logo.JPG"/>
+    </div>
+    <div class="flex-50 misc-card project-modal_description">
+      <p class="project-modal_text">
+          <strong>Stack:</strong> Node.js (Express), Flask, React, Redux, Heroku, Mailgun
+      </p>
+      <div class="full-width flex-row">
+        <div class="rounded-button-wrapper secondary-gradient">
+          <a href="https://tracksy.netlify.com/"
+           class="rounded-button"
+           target="_blank"><span>VISIT</span></a>
+        </div>
+        <div class="rounded-button-wrapper rounded-button-wrapper--outline secondary-gradient">
+            <a href="https://github.com/ra-phael?tab=repositories" 
+            class="rounded-button rounded-button--outline" target="_blank"><span>SOURCE</span></a>
+        </div>
+      </div>
     </div>
   </article>
 </body>
@@ -288,6 +319,13 @@
 	var scene2 = new ScrollMagic.Scene({triggerElement: ".event-browser"})
 					// trigger animation by adding a css class
                     .setClassToggle("#event-browser", "reveal-up")
+                    .reverse(false)
+					// .addIndicators({name: "1 - add a class"}) // add indicators (requires plugin)
+                    .addTo(controller);
+
+	var scene4 = new ScrollMagic.Scene({triggerElement: ".tracksy"})
+					// trigger animation by adding a css class
+                    .setClassToggle("#tracksy", "reveal-up")
                     .reverse(false)
 					// .addIndicators({name: "1 - add a class"}) // add indicators (requires plugin)
                     .addTo(controller);
