@@ -16,3 +16,9 @@ function toggleMenu() {
     header.classList.toggle("menu-revealed")
     mobileMenuIcon.classList.toggle("mobile-menu__icon--opened");
 }
+
+function openProjectDetails() {
+  let el = this;
+  let slug = el.firstElementChild.firstElementChild.id;
+  window.location.href = '/projects/'+ slug;
+}

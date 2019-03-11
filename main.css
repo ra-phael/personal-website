@@ -26,6 +26,16 @@
     justify-content: center;
 }
 
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.full-width {
+  width: 100%;
+}
+
 /*------------------------------------*\
   #BASE
 \*------------------------------------*/
@@ -91,6 +101,26 @@ a {
     margin-bottom: 2rem;
 }
 
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #acacac;
+}
+
 /*------------------------------------*\
   #OBJECTS
 \*------------------------------------*/
@@ -101,6 +131,10 @@ a {
 
 .flex-60 {
     width: 60%;
+}
+
+.flex-50 {
+    width: 50%;
 }
 
 .flex-40 {
@@ -158,6 +192,12 @@ section {
     transition: all 0.3s ease-out;
 }
 
+.rounded-button-wrapper--outline {
+  background-image: none;
+  color: #FF0066;
+  border: 1px solid;
+}
+
 .rounded-button {
     position: relative;
 }
@@ -177,12 +217,6 @@ section {
     transform-style: preserve-3d;
     transition: all 0.3s ease-out;
 }
-
-/* .rounded-button:hover > span {
-    -webkit-filter: brightness(1.05) contrast(1.05);
-    filter: brightness(1.05) contrast(1.05);
-} */
-
 
 .rounded-button::before {
     content: '';
@@ -208,7 +242,9 @@ section {
     opacity: 1;
 }
 
-
+.rounded-button--outline:hover::before {
+  opacity: 0;
+}
 
 /*------------------------------------*\
   #HEADER
@@ -749,6 +785,46 @@ footer {
     footer {
         margin-bottom: 3em;
     }
+}
+
+
+/*------------------------------------*\
+  #MODALS
+\*------------------------------------*/
+.project-modal {
+  height: 80vh;
+  width: 93vw;
+  z-index: 400;
+  position: fixed;
+  top: 15%;
+  right: 3%;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 0px 5px 2px #00000026;
+}
+
+.project-modal__left {
+  padding: 12px;
+}
+
+.project-modal__close {
+  width: 24px;
+  position: absolute;
+  right: 2%;
+  top: 3%;
+}
+
+.project-modal_description {
+  margin: 2.7rem 0 0 0;
+  max-width: none;
+  margin-bottom: 0;
+}
+
+.project-modal_text {
+  font-size: 1rem;
+  width: 91%;
+  height: 72%;
+  overflow: auto;
 }
 
 /*------------------------------------*\
