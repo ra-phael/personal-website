@@ -161,6 +161,17 @@
       <hr class="subline">
       <div class="timeline">
           <div id="xp1" class="xp__wrapper">
+              <div class="xp__year--left ">2019</div>
+              <div class="xp__card xp__card--right">
+                  <div class="xp__card__content">
+                      <h3 class="xp__card__title">Freelance Software Developer</h3>
+                      <h4 style="font-size: 1.6rem" class="xp__card__company">
+                          Currently working for: Eurosport
+                      </h4>
+                  </div>
+              </div>
+          </div>
+          <div id="xp2" class="xp__wrapper">
               <div class="xp__year--right ">2017/8</div>
               <div class="xp__card xp__card--left">
                   <div class="xp__card__content">
@@ -169,7 +180,7 @@
                   </div>
               </div>
           </div>
-          <div id="xp2" class="xp__wrapper">
+          <div id="xp3" class="xp__wrapper">
               <div class="xp__year--left ">2016</div>
               <div class="xp__card xp__card--right">
                   <div class="xp__card__content">
@@ -178,7 +189,7 @@
                   </div>
               </div>
           </div>
-          <div id="xp3" class="xp__wrapper">
+          <div id="xp4" class="xp__wrapper">
               <div class="xp__year--right ">2015</div>
               <div class="xp__card xp__card--left">
                   <div class="xp__card__content">
@@ -187,7 +198,7 @@
                   </div>
               </div>
           </div>
-          <div id="xp4" class="xp__wrapper">
+          <div id="xp5" class="xp__wrapper">
               <div class="xp__year--left ">2014</div>
               <div class="xp__card xp__card--right">
                   <div class="xp__card__content">
@@ -318,7 +329,7 @@
 					// .addIndicators({name: "1 - add a class"}) // add indicators (requires plugin)
                     .addTo(controller);
 
-	var scene2 = new ScrollMagic.Scene({triggerElement: ".event-browser"})
+	var scene3 = new ScrollMagic.Scene({triggerElement: ".event-browser"})
 					// trigger animation by adding a css class
                     .setClassToggle("#event-browser", "reveal-up")
                     .reverse(false)
@@ -332,20 +343,20 @@
 					// .addIndicators({name: "1 - add a class"}) // add indicators (requires plugin)
                     .addTo(controller);
                     
-    var scene3 = new ScrollMagic.Scene({triggerElement: ".experiences"})
+    var scene5 = new ScrollMagic.Scene({triggerElement: ".experiences"})
                     .setClassToggle("#xp1", "simple-reveal")
                     .reverse(false)
                     // .addIndicators({name: "XP 1"}) 
                     .addTo(controller);
                     
-    var scene3 = new ScrollMagic.Scene({triggerElement: ".experiences"})
+    var scene6 = new ScrollMagic.Scene({triggerElement: ".experiences"})
                     .setClassToggle("#xp2", "simple-reveal")
                     .offset(160)
                     .reverse(false)
                     // .addIndicators({name: "XP 2"})
                     .addTo(controller);
     
-    var scene3 = new ScrollMagic.Scene({triggerElement: ".experiences"})
+    var scene7 = new ScrollMagic.Scene({triggerElement: ".experiences"})
                     // trigger animation by adding a css class
                     .setClassToggle("#xp3", "simple-reveal")
                     .offset(320)
@@ -353,9 +364,17 @@
                     // .addIndicators({name: "XP 3"}) 
                     .addTo(controller);
 
-    var scene3 = new ScrollMagic.Scene({triggerElement: ".experiences"})
+    var scene8 = new ScrollMagic.Scene({triggerElement: ".experiences"})
                     // trigger animation by adding a css class
                     .setClassToggle("#xp4", "simple-reveal")
+                    .offset(480)
+                    .reverse(false)
+                    // .addIndicators({name: "XP 4"})
+                    .addTo(controller);
+
+    var scene9 = new ScrollMagic.Scene({triggerElement: ".experiences"})
+                    // trigger animation by adding a css class
+                    .setClassToggle("#xp5", "simple-reveal")
                     .offset(480)
                     .reverse(false)
                     // .addIndicators({name: "XP 4"})
