@@ -530,7 +530,7 @@ header {
 }
 
 .eurosport {
-  background-image: url(../assets/portfolio/eurosport.png);
+  background-image: url(../assets/portfolio/eurosport.jpg);
   background-size: cover;
 }
 
@@ -541,7 +541,7 @@ header {
 }
 
 .simma {
-  background-image: url(../assets/portfolio/simma1.png);
+  background-image: url(../assets/portfolio/simma1.jpg);
   background-size: cover;
   background-position-y: -126px;
 }
