@@ -8,14 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="../assets/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="../assets/favicon-16x16.png" sizes="16x16" />
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Muli&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js"></script>
-    <script>
-        // init controller
-        var controller = new ScrollMagic.Controller();
-    </script>
+    <script async src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+    <script async src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js"></script>
     <script src="/main.js"></script>
     <meta name="google-site-verification" content="J8IhsvgIASwKAWTwNV9p8brdBext1wNSsdwiDwULesQ" />
 </head>
@@ -23,11 +19,11 @@
   <header class="main-gradient" id="header">
       <nav >
           <ul class="navbar">
-              <li class="clean-list-item"><a class="navbar__element" href="#home" onclick="onMenuItemClick()">Home</a></li>
-              <li class="clean-list-item"><a class="navbar__element" href="#portfolio" onclick="onMenuItemClick()">Portfolio</a></li>
-              <li class="clean-list-item"><a class="navbar__element" href="#skills" onclick="onMenuItemClick()">Skills</a></li>
-              <li class="clean-list-item"><a class="navbar__element" href="#misc" onclick="onMenuItemClick()">Misc</a></li>
-              <li class="clean-list-item"><a class="navbar__element" href="https://www.linkedin.com/in/raphaelroullet/" onclick="onMenuItemClick()">Contact</a></li>
+              <li class="clean-list-item"><a class="navbar__element underline-hover" href="#home" onclick="onMenuItemClick()">Home</a></li>
+              <li class="clean-list-item"><a class="navbar__element underline-hover" href="#portfolio" onclick="onMenuItemClick()">Portfolio</a></li>
+              <li class="clean-list-item"><a class="navbar__element underline-hover" href="#skills" onclick="onMenuItemClick()">Skills</a></li>
+              <li class="clean-list-item"><a class="navbar__element underline-hover" href="#misc" onclick="onMenuItemClick()">Misc</a></li>
+              <li class="clean-list-item"><a class="navbar__element underline-hover" href="https://www.linkedin.com/in/raphaelroullet/" onclick="onMenuItemClick()">Contact</a></li>
           </ul>
       </nav>
   </header>
@@ -45,9 +41,8 @@
               <h1>Hi! I'm Raphael Roullet</h1>
               <h3>A self-taught software engineer</h3>
               <p>
-                  I had fun developing this site from scratch (using almost only pure HTML & CSS). 
-                  Here, you can learn a bit more about <a href="#portfolio">what I've built</a> and my <a href="#experiences">past experiences</a>...
-                  as well as some other <a href="#misc">good stuff</a>. 
+                  Here, you can learn a bit more about <a href="#portfolio" class="underline-hover">what I've built</a> and my <a href="#experiences" class="underline-hover">past experiences</a>...
+                  as well as some other <a href="#misc" class="underline-hover">good stuff</a>. 
               </p>
           </div>
           <div class="hero__social">
@@ -152,6 +147,9 @@
           </div>
           <div class="skill-card">
               <img class="skill-logo" src="assets/skills/redux_logo.svg" />
+          </div>
+          <div class="skill-card">
+              <img class="skill-logo" src="assets/skills/graphql_logo.svg" />
           </div>
           <div class="skill-card">
               <img class="skill-logo" src="assets/skills/python_logo.svg" />
@@ -350,77 +348,79 @@
 
 <script>
 	// build scenes
-	var scene1 = new ScrollMagic.Scene({triggerElement: ".simma"})
-					.setClassToggle("#simma", "reveal-up")
-					// .addIndicators({name: "1 - add a class"}) // add indicators (requires plugin)
-                    .reverse(false)
-                    .addTo(controller);
-                    
-	var scene2 = new ScrollMagic.Scene({triggerElement: ".perso-site"})
-					// trigger animation by adding a css class
-                    .setClassToggle("#perso-site", "reveal-up")
-                    .reverse(false)
-					// .addIndicators({name: "1 - add a class"}) // add indicators (requires plugin)
-                    .addTo(controller);
-
-	var scene3 = new ScrollMagic.Scene({triggerElement: ".event-browser"})
-					// trigger animation by adding a css class
-                    .setClassToggle("#event-browser", "reveal-up")
-                    .reverse(false)
-					// .addIndicators({name: "1 - add a class"}) // add indicators (requires plugin)
-                    .addTo(controller);
-
-	var scene4 = new ScrollMagic.Scene({triggerElement: ".tracksy"})
-					// trigger animation by adding a css class
-                    .setClassToggle("#tracksy", "reveal-up")
-                    .reverse(false)
-					// .addIndicators({name: "1 - add a class"}) // add indicators (requires plugin)
-                    .addTo(controller);
-
-	var scene10 = new ScrollMagic.Scene({triggerElement: ".eurosport"})
-					// trigger animation by adding a css class
-                    .setClassToggle("#eurosport", "reveal-up")
-                    .reverse(false)
-					// .addIndicators({name: "1 - add a class"}) // add indicators (requires plugin)
-                    .addTo(controller);
-                    
-    var scene5 = new ScrollMagic.Scene({triggerElement: ".experiences"})
-                    .setClassToggle("#xp1", "simple-reveal")
-                    .reverse(false)
-                    // .addIndicators({name: "XP 1"}) 
-                    .addTo(controller);
-                    
-    var scene6 = new ScrollMagic.Scene({triggerElement: ".experiences"})
-                    .setClassToggle("#xp2", "simple-reveal")
-                    .offset(160)
-                    .reverse(false)
-                    // .addIndicators({name: "XP 2"})
-                    .addTo(controller);
-    
-    var scene7 = new ScrollMagic.Scene({triggerElement: ".experiences"})
-                    // trigger animation by adding a css class
-                    .setClassToggle("#xp3", "simple-reveal")
-                    .offset(320)
-                    .reverse(false)
-                    // .addIndicators({name: "XP 3"}) 
-                    .addTo(controller);
-
-    var scene8 = new ScrollMagic.Scene({triggerElement: ".experiences"})
-                    // trigger animation by adding a css class
-                    .setClassToggle("#xp4", "simple-reveal")
-                    .offset(480)
-                    .reverse(false)
-                    // .addIndicators({name: "XP 4"})
-                    .addTo(controller);
-
-    var scene9 = new ScrollMagic.Scene({triggerElement: ".experiences"})
-                    // trigger animation by adding a css class
-                    .setClassToggle("#xp5", "simple-reveal")
-                    .offset(480)
-                    .reverse(false)
-                    // .addIndicators({name: "XP 4"})
-                    .addTo(controller);
-
+  const scenes = [
+    {
+      triggerElement: ".simma",
+      targetId: '#simma',
+      animation: 'reveal-up',
+      offset: 0
+    },
+    {
+      triggerElement: ".perso-site",
+      targetId: '#perso-site',
+      animation: 'reveal-up',
+      offset: 0
+    },
+    {
+      triggerElement: ".event-browser",
+      targetId: '#event-browser',
+      animation: 'reveal-up',
+      offset: 0
+    },
+    {
+      triggerElement: ".tracksy",
+      targetId: '#tracksy',
+      animation: 'reveal-up',
+      offset: 0
+    },
+    {
+      triggerElement: ".eurosport",
+      targetId: '#eurosport',
+      animation: 'reveal-up',
+      offset: 0
+    },
+    {
+      triggerElement: ".experiences",
+      targetId: '#xp1',
+      animation: 'simple-reveal',
+      offset: 0
+    },
+    {
+      triggerElement: ".experiences",
+      targetId: '#xp2',
+      animation: 'simple-reveal',
+      offset: 160
+    },
+    {
+      triggerElement: ".experiences",
+      targetId: '#xp3',
+      animation: 'simple-reveal',
+      offset: 320
+    },
+    {
+      triggerElement: ".experiences",
+      targetId: '#xp4',
+      animation: 'simple-reveal',
+      offset: 480
+    },
+    {
+      triggerElement: ".experiences",
+      targetId: '#xp5',
+      animation: 'simple-reveal',
+      offset: 480
+    },
+  ];
+  var controller = new ScrollMagic.Controller();
+  if (controller) {
+    scenes.forEach(scene => {
+      new ScrollMagic.Scene({triggerElement: scene.triggerElement})
+                      .setClassToggle(scene.targetId, scene.animation)
+                      .offset(scene.offset)
+                      .reverse(false)
+                      // .addIndicators({name: "XP 4"})
+                      .addTo(controller);
+    })
+  }
 </script>
 
 </html>

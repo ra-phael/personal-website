@@ -36,11 +36,6 @@
   #BASE
 \*------------------------------------*/
 
-@font-face {
-  font-family: 'Maison';
-  src: url("../assets/Maison-Neue-Light.otf") format("opentype");
-}
-
 * {
   box-sizing: border-box;
   word-wrap: break-word;
@@ -56,7 +51,7 @@ strong {
 
 body {
   height: 100%;
-  font-family: 'Maison';
+  font-family: 'Muli';
   font-weight: normal;
   color: #fff;
 }
@@ -262,6 +257,29 @@ section {
   opacity: 0;
 }
 
+.underline-hover {
+  position: relative;
+}
+
+.underline-hover:after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  width: 0px;
+  height: 2px;
+  /* margin: 5px 0 0; */
+  transition: all 0.2s ease-in-out;
+  transition-duration: 0.31s;
+  opacity: 0;
+  left: 0;
+  background-color: #d34eb4;
+}
+
+.underline-hover:hover:after {
+  width: 100%;
+  opacity: 1;
+}
+
 /*------------------------------------*\
   #HEADER
 \*------------------------------------*/
@@ -292,30 +310,10 @@ header {
   color: #fff;
   cursor: pointer;
   font-size: 1.2rem;
-  position: relative;
-}
-
-.navbar__element:after {
-  content: "";
-  position: absolute;
-  bottom: -5px;
-  width: 0px;
-  height: 2px;
-  /* margin: 5px 0 0; */
-  transition: all 0.2s ease-in-out;
-  transition-duration: 0.31s;
-  opacity: 0;
-  left: 0;
-  background-color: #d34eb4;
 }
 
 .navbar__element:hover {
   font-weight: bold;
-}
-
-.navbar__element:hover:after {
-  width: 100%;
-  opacity: 1;
 }
 
 .mobile-menu {
