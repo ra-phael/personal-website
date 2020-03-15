@@ -576,6 +576,27 @@ header {
   }
 }
 
+.carousel {
+  min-height: 300px;
+  margin-top: 3%;
+}
+
+.design-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  max-width: 300px;
+}
+
+.design-card__img {
+  max-height: 80%;
+}
+
+.simma-icon {
+  max-height: 40%;
+}
+
 /*------------------------------------*\
   #SKILLS & TECHNOS
 \*------------------------------------*/
