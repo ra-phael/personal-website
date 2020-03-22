@@ -577,24 +577,58 @@ header {
 }
 
 .carousel {
+  display: flex;
+  justify-content: flex-start;
   min-height: 300px;
-  margin-top: 3%;
+  padding: 2.5rem 0;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  touch-action: pan-x;
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+#design-carousel::-webkit-scrollbar {
+  width: 0 !important;
+  height: 0;
+}
+
+@media screen and (min-width: 1136px) {
+  .carousel {
+    justify-content: space-evenly;
+  }
 }
 
 .design-card {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
-  max-width: 300px;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 300px;
+  padding: 0 2%;
+  margin: 0 1rem;
 }
 
 .design-card__img {
   max-height: 80%;
+  margin-bottom: 4rem;
+}
+
+.design-card__caption {
+  position: absolute;
+  bottom: 3rem;
+  font-size: 1.2rem;
 }
 
 .simma-icon {
   max-height: 40%;
+}
+
+.novora-logo {
+  max-width: 80%;
 }
 
 /*------------------------------------*\
