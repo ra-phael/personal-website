@@ -13,7 +13,7 @@
 }
 
 .text-center {
-  text-align: center
+  text-align: center;
 }
 
 .flex-center {
@@ -51,13 +51,16 @@ strong {
 
 body {
   height: 100%;
-  font-family: 'Muli';
+  font-family: "Muli";
   font-weight: normal;
   color: #fff;
 }
 
-h1, h2, h4, h5 {
-  font-family: 'Josefin Sans', 'Avant Garde', sans-serif;
+h1,
+h2,
+h4,
+h5 {
+  font-family: "Josefin Sans", "Avant Garde", sans-serif;
 }
 
 h1 {
@@ -113,17 +116,17 @@ li {
 ::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
 }
 
 ::-webkit-scrollbar {
   width: 12px;
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
 }
 
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   background-color: #acacac;
 }
 
@@ -153,7 +156,9 @@ li {
 }
 
 @media screen and (max-width: 746px) {
-  .flex-60, .flex-40, .flex-50 {
+  .flex-60,
+  .flex-40,
+  .flex-50 {
     width: 100%;
   }
 }
@@ -176,8 +181,10 @@ section {
   border-radius: 8px;
   background-color: #fff;
   height: 300px;
-  -webkit-box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.30), 0 2px 6px 2px rgba(60, 64, 67, 0.15);
-  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.30), 0 2px 6px 2px rgba(60, 64, 67, 0.15);
+  -webkit-box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),
+    0 2px 6px 2px rgba(60, 64, 67, 0.15);
+  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),
+    0 2px 6px 2px rgba(60, 64, 67, 0.15);
   z-index: 20;
 }
 
@@ -190,7 +197,12 @@ section {
 }
 
 .secondary-gradient {
-  background-image: linear-gradient(-225deg, #A445B2 0%, #D41872 52%, #FF0066 100%);
+  background-image: linear-gradient(
+    -225deg,
+    #a445b2 0%,
+    #d41872 52%,
+    #ff0066 100%
+  );
 }
 
 .rounded-button-wrapper {
@@ -205,7 +217,7 @@ section {
 
 .rounded-button-wrapper--outline {
   background-image: none;
-  color: #FF0066;
+  color: #ff0066;
   border: 1px solid;
 }
 
@@ -213,7 +225,7 @@ section {
   position: relative;
 }
 
-.rounded-button>span {
+.rounded-button > span {
   padding: 1rem 2rem;
   border-radius: 12rem;
   cursor: pointer;
@@ -230,7 +242,7 @@ section {
 }
 
 .rounded-button::before {
-  content: '';
+  content: "";
   display: inline-block;
   height: 40px;
   position: absolute;
@@ -240,7 +252,12 @@ section {
   z-index: -1;
   padding: 0 2.5rem;
   border-radius: 30em;
-  background-image: linear-gradient(-225deg, #A445B2 0%, #D41872 52%, #FF0066 100%);
+  background-image: linear-gradient(
+    -225deg,
+    #a445b2 0%,
+    #d41872 52%,
+    #ff0066 100%
+  );
   -webkit-filter: blur(10px) brightness(0.95);
   filter: blur(10px) brightness(0.95);
   -webkit-transform-style: preserve-3d;
@@ -395,14 +412,15 @@ header {
   margin: 4% 0 4%;
   position: relative;
   left: -5px;
+  max-width: 1000px;
 }
 
-.hero__text>h3 {
+.hero__text > h3 {
   padding-bottom: 8%;
   padding-top: 1%;
 }
 
-.hero__text>p {
+.hero__text > p {
   margin-bottom: 2rem;
 }
 
@@ -491,7 +509,11 @@ header {
   right: 0;
   top: 0;
   bottom: 0;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0.65) 100%);
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.65) 0%,
+    rgba(255, 255, 255, 0.65) 100%
+  );
   border-radius: 8px;
 }
 
@@ -502,11 +524,16 @@ header {
   right: 0;
   top: 0;
   bottom: 0;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0.65) 100%);
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.65) 0%,
+    rgba(255, 255, 255, 0.65) 100%
+  );
   border-radius: 8px;
 }
 
-.project__title--left, .project__title--right {
+.project__title--left,
+.project__title--right {
   font-size: 3rem;
   position: relative;
   top: 40%;
@@ -538,8 +565,8 @@ header {
   background-size: cover;
 }
 
-.tracksy {
-  background-image: url(../assets/portfolio/tracksy.jpg);
+.linxy {
+  background-image: url(../assets/portfolio/linxy.png);
   background-size: cover;
   background-position-y: 9px;
 }
@@ -551,7 +578,7 @@ header {
 }
 
 .perso-site {
-  background-image: url(../assets/portfolio/perso-site.jpg);
+  background-image: url(./assets/portfolio/perso-site.jpg);
   background-size: cover;
   background-position-x: -108px;
 }
@@ -563,11 +590,13 @@ header {
 }
 
 @media screen and (max-width: 746px) {
-  .project-card--right, .project-card--left {
+  .project-card--right,
+  .project-card--left {
     margin: 10% auto;
     align-self: auto;
   }
-  .project__title--left, .project__title--right {
+  .project__title--left,
+  .project__title--right {
     left: auto;
     right: auto;
     top: -10%;
@@ -664,7 +693,7 @@ header {
 }
 
 .timeline::before {
-  content: '';
+  content: "";
   position: absolute;
   border-right: 4px dotted white;
   height: 100%;
@@ -701,7 +730,7 @@ header {
 }
 
 .xp__card::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 16px;
   height: 16px;
@@ -726,7 +755,8 @@ header {
   font-size: 1.6rem;
 }
 
-.xp__card--left::before, .xp__card--right::before {
+.xp__card--left::before,
+.xp__card--right::before {
   content: " ";
   height: 2px;
   position: absolute;
@@ -741,7 +771,8 @@ header {
   left: 10px;
 }
 
-.xp__year--right, .xp__year--left {
+.xp__year--right,
+.xp__year--left {
   font-size: 2rem;
   position: relative;
   left: 54%;
@@ -757,20 +788,24 @@ header {
   .timeline::before {
     left: 25%;
   }
-  .xp__card--right, .xp__card--left {
+  .xp__card--right,
+  .xp__card--left {
     left: 20%;
     width: 88%;
   }
-  .xp__card--left::after, .xp__card--right::after {
+  .xp__card--left::after,
+  .xp__card--right::after {
     left: -3px;
   }
-  .xp__card--left::before, .xp__card--right::before {
+  .xp__card--left::before,
+  .xp__card--right::before {
     left: 16px;
   }
   .xp__card__title {
     font-size: 1.8rem;
   }
-  .xp__year--left, .xp__year--right {
+  .xp__year--left,
+  .xp__year--right {
     font-size: 3.4vmax;
     left: -5%;
     bottom: -95px;
@@ -782,7 +817,7 @@ header {
 \*------------------------------------*/
 
 .education {
-  background-image: url('../assets/linedpaper.png');
+  background-image: url("../assets/linedpaper.png");
   color: #000;
   /* Parallax */
   position: relative;

@@ -46,7 +46,7 @@
               <h3>A self-taught software engineer</h3>
               <p>
                   Here, you can learn a bit more about <a href="#portfolio" class="underline-hover">what I've built</a> and my <a href="#experiences" class="underline-hover">past experiences</a>...
-                  as well as some other <a href="#misc" class="underline-hover">good stuff</a>. 
+                  as well as some other <a href="#misc" class="underline-hover">good stuff</a>. Or head over to <a href="https://blog.raphaelroullet.com/">my blog</a> directly.
               </p>
           </div>
           <div class="hero__social">
@@ -90,14 +90,13 @@
                     </span>
                   </p>
               </a>
-              <a class="card project-card--right tracksy"
-                onclick="openProjectDetails.call(this)">
+              <div class="card project-card--right linxy">
                   <p class="project__title--right">
-                    <span class="project__title-span" id="tracksy">
-                      TRACKSY
+                    <span class="project__title-span" id="linxy">
+                      LINXY
                     </span>
                   </p>
-              </a>
+                </div>
               <a class="card project-card--left simma"
                 onclick="openProjectDetails.call(this)">
                   <p class="project__title--left">
@@ -315,30 +314,17 @@
       </div>
     </div>
   </article>
-  <article id="tracksy-modal" class="project-modal hidden">
+  <article id="linxy-modal" class="project-modal hidden">
     <a onclick="closeProjectDetails.call(this)">
       <img src="./assets/close.svg" alt="close" class="project-modal__close"/>
     </a>
     <div class="flex-50 project-modal__left">
-      <img style="width: 160px;" class="project-modal__img" alt="Tracksy" src="./assets/portfolio/tracksy-logo.JPG"/>
+      <img style="width: 160px;" class="project-modal__img" alt="Linxy" src="./assets/portfolio/linxy.png"/>
     </div>
     <div class="flex-50 misc-card project-modal_description">
       <p class="project-modal_text">
-          This web app allows you to track specific luxury items. Get notified via email when they are listed on an online marketplace for cheap!<br/>
-          <br/>Work in progress...<br/>
-          <strong>Stack:</strong> Node.js (Express), Flask, React, Redux, Heroku, Mailgun
+         Coming soon!
       </p>
-      <div class="full-width flex-row">
-        <div class="rounded-button-wrapper secondary-gradient">
-          <a href="https://tracksy.netlify.com/"
-           class="rounded-button"
-           target="_blank"><span>VISIT</span></a>
-        </div>
-        <div class="rounded-button-wrapper rounded-button-wrapper--outline secondary-gradient">
-            <a href="https://github.com/ra-phael?tab=repositories" 
-            class="rounded-button rounded-button--outline" target="_blank"><span>SOURCE</span></a>
-        </div>
-      </div>
     </div>
   </article>
   <article id="eurosport-modal" class="project-modal hidden">
@@ -350,17 +336,21 @@
     </div>
     <div class="flex-50 misc-card project-modal_description">
       <div class="project-modal_text">
-        Migrating from legacy, I participated in the development of <a class="text-link" href="https://eurosport.com/" target="_blank">Eurosport</a>'s new website and its new tech stack based on React 16+, Node.js...
+        Migrating from legacy, I participated in <a class="text-link" href="https://www.eurosport.co.uk/" target="_blank">Eurosport</a>'s complete website overhaul and its new tech stack based on React 16+, Next.js, Redux, Relay, Node.js...
         <br/>It uses both server and client side rendering to generate pages from various APIs, stateless components and dynamic page templates. 
-        <br/><br/>During my mission I have worked on:
+        <br/><br/>During my mission I have helped:
                <ul >
                  <li>
-                   Developing Styled Components to expand <a class="text-link" href="https://es-web-toolkit.netlify.com/" target="_blank">Eurosport's library</a></li>
+                   Developing React components (with Emotion then Tailwind)</li>
                  </li>
                  <li>
                    Creating new pages, features, fixing bugs and improving performances on this new architecture and other projects.
                    <br/>Here's <a class="text-link" href="https://www.eurosport.fr/tennis/roland-garros-messieurs/2019/live-dominic-thiem-rafael-nadal_mtc1109504/live.shtml" target="_blank">an example of a page</a> that we revamped.
                  </li>
+                 <li>Leading the developments of the new article page</li>
+                 <li>
+                  Prototyping an app in React-native
+                </li>
          </ul>
       </div>
     </div>
@@ -389,8 +379,8 @@
       offset: 0
     },
     {
-      triggerElement: ".tracksy",
-      targetId: '#tracksy',
+      triggerElement: ".linxy",
+      targetId: '#linxy',
       animation: 'reveal-up',
       offset: 0
     },
