@@ -418,6 +418,7 @@ header {
 .hero__text > h3 {
   padding-bottom: 8%;
   padding-top: 1%;
+  line-height: 1.2;
 }
 
 .hero__text > p {
