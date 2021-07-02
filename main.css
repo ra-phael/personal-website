@@ -400,7 +400,7 @@ header {
 }
 
 .hero__img {
-  max-width: 100%;
+  max-width: min(100%, 412px);
   max-height: 80vh;
   margin: auto;
   display: block;
