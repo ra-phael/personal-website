@@ -82,6 +82,14 @@
           <hr class="subline">
           <h3 class="text-center">DEV</h3>
           <div class="projects">
+             <a class="card project-card--right interrep"
+                href="https://interrep.link" target="_blank">
+                  <p class="project__title--right">
+                    <span class="project__title-span" id="interrep">
+                      INTERREP
+                    </span>
+                  </p>
+              </a>
               <a class="card project-card--left eurosport"
                 onclick="openProjectDetails.call(this)">
                   <p class="project__title--left">
@@ -372,6 +380,12 @@
 <script>
 	// build scenes
   const scenes = [
+    {
+      triggerElement: ".interrep",
+      targetId: '#interrep',
+      animation: 'reveal-up',
+      offset: -150
+    },
     {
       triggerElement: ".simma",
       targetId: '#simma',

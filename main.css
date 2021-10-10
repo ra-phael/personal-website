@@ -561,6 +561,11 @@ header {
   left: auto;
 }
 
+.interrep {
+  background-image: url(../assets/portfolio/interrep.png);
+  background-size: cover;
+}
+
 .eurosport {
   background-image: url(../assets/portfolio/eurosport.jpg);
   background-size: cover;
