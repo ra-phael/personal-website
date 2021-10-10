@@ -206,7 +206,16 @@
       <h2 class="section__title">EXPERIENCE</h2>
       <hr class="subline">
       <div class="timeline">
-          <div id="xp1" class="xp__wrapper">
+        <div id="xp6" class="xp__wrapper">
+              <div class="xp__year--right ">2021</div>
+              <div class="xp__card xp__card--left">
+                  <div class="xp__card__content">
+                      <h3 class="xp__card__title">Founding Engineer</h3>
+                       <h4 class="xp__card__company"><a href="https://www.violet.co" target="_blank" rel="noopener noreferrer">Violet</a></h4>
+                  </div>
+              </div>
+          </div>
+          <div id="xp5" class="xp__wrapper">
               <div class="xp__year--left ">2019</div>
               <div class="xp__card xp__card--right">
                   <div class="xp__card__content">
@@ -217,7 +226,7 @@
                   </div>
               </div>
           </div>
-          <div id="xp2" class="xp__wrapper">
+          <div id="xp4" class="xp__wrapper">
               <div class="xp__year--right ">2017/8</div>
               <div class="xp__card xp__card--left">
                   <div class="xp__card__content">
@@ -235,7 +244,7 @@
                   </div>
               </div>
           </div>
-          <div id="xp4" class="xp__wrapper">
+          <div id="xp2" class="xp__wrapper">
               <div class="xp__year--right ">2015</div>
               <div class="xp__card xp__card--left">
                   <div class="xp__card__content">
@@ -244,7 +253,7 @@
                   </div>
               </div>
           </div>
-          <div id="xp5" class="xp__wrapper">
+          <div id="xp1" class="xp__wrapper">
               <div class="xp__year--left ">2014</div>
               <div class="xp__card xp__card--right">
                   <div class="xp__card__content">
@@ -418,33 +427,39 @@
     },
     {
       triggerElement: ".experiences",
-      targetId: '#xp1',
+      targetId: '#xp6',
       animation: 'simple-reveal',
       offset: 0
     },
     {
       triggerElement: ".experiences",
-      targetId: '#xp2',
+      targetId: '#xp5',
       animation: 'simple-reveal',
-      offset: 160
-    },
-    {
-      triggerElement: ".experiences",
-      targetId: '#xp3',
-      animation: 'simple-reveal',
-      offset: 320
+      offset: 150
     },
     {
       triggerElement: ".experiences",
       targetId: '#xp4',
       animation: 'simple-reveal',
-      offset: 480
+      offset: 300
     },
     {
       triggerElement: ".experiences",
-      targetId: '#xp5',
+      targetId: '#xp3',
       animation: 'simple-reveal',
-      offset: 480
+      offset: 450
+    },
+    {
+      triggerElement: ".experiences",
+      targetId: '#xp2',
+      animation: 'simple-reveal',
+      offset: 600
+    },
+    {
+      triggerElement: ".experiences",
+      targetId: '#xp1',
+      animation: 'simple-reveal',
+      offset: 750
     },
   ];
   var controller = new ScrollMagic.Controller();
@@ -454,7 +469,7 @@
                       .setClassToggle(scene.targetId, scene.animation)
                       .offset(scene.offset)
                       .reverse(false)
-                      // .addIndicators({name: "XP 4"})
+                      .addIndicators({name: "XP 4"})
                       .addTo(controller);
     })
   }
